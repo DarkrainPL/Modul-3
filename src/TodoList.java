@@ -49,11 +49,11 @@ public class TodoList {
             System.out.println(i + " " + list.get(i));
                    }
     }
-    public void removeTask(int a) {
+    public void removeTask(int a) {     // czemu inaczej niz add?
         Scanner scanner = new Scanner(System.in);
         System.out.println("Which task to remove?:");
         String input = scanner.nextLine();
-        a = Integer.parseInt(input);
+        a = Integer.parseInt(input); // czemu to robie?
         list.remove(a);
     }
 

@@ -10,7 +10,8 @@ public class Main {
         // obiektTodoList.start();
 
         Zadanie3 obiektZadanie3 = new Zadanie3();
-        System.out.println(obiektZadanie3.countWords());
+        String word = "tellus";
+        System.out.println(obiektZadanie3.countWords(word));
 
 
         }
