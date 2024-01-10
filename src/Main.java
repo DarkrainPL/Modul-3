@@ -1,4 +1,4 @@
-import java.util.HashMap;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -9,10 +9,13 @@ public class Main {
         // TodoList obiektTodoList = new TodoList();
         // obiektTodoList.start();
 
-        Zadanie3 obiektZadanie3 = new Zadanie3();
-        String word = "tellus";
-        System.out.println(obiektZadanie3.countWords(word));
+        // Zadanie3 obiektZadanie3 = new Zadanie3();
+        // Scanner scanner = new Scanner(System.in);
+        // System.out.println("Podaj słowo:");
+        // String word = scanner.nextLine();
+        // System.out.println(obiektZadanie3.countWords(word));
 
+           Zadanie4 obiectTask4Module3 = new Zadanie4();
 
-        }
     }
+}
