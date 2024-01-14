@@ -1,3 +1,5 @@
+import java.util.Comparator;
+
 public class Student implements Comparable<Student> {
     private int age;
     private int height;
@@ -10,6 +12,7 @@ public class Student implements Comparable<Student> {
         this.name = name;
         this.lastName = lastName;
     }
+
 
     public int getAge() {
         return age;
@@ -43,9 +46,23 @@ public class Student implements Comparable<Student> {
         this.lastName = lastName;
     }
 
+    @Override
+    public String toString() {
+        return "Student{" +
+                "age=" + age +
+                ", height=" + height +
+                ", name='" + name + '\'' +
+                ", lastName='" + lastName + '\'' +
+                '}';
+    }
+
 
     @Override
-    public int compareTo(Student otherStudent) {
-        return Integer.compare(getAge(), otherStudent.getAge());
+    public int compareTo(Student student) {
+        return this.lastName.compareTo(student.lastName);
+
+        }
+
     }
-}
+
+
